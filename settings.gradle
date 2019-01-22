@@ -1,0 +1,1 @@
+include ':app', ':network', ':glide38', ':glide48', ':lockpattern', ':permission', ':baselibrary', ':loopview', ':commonAdapter', ':m3u8Down', ':sliderecyclerview', ':gsyvideoplayer'

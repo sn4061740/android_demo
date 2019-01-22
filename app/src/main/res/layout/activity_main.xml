@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="vertical"
+    >
+
+    <Button
+        android:id="@+id/btn_net"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="网络请求"
+        />
+
+    <Button
+        android:id="@+id/btn_glide"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="图片加载"
+        />
+
+    <Button
+        android:id="@+id/btn_logkpattern"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="手势密码"
+        />
+
+    <Button
+        android:id="@+id/btn_permission"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="权限申请"
+        />
+
+    <Button
+        android:id="@+id/btn_base"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Base库"
+        />
+
+    <Button
+        android:id="@+id/btn_banner"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Banner LoopView"
+        />
+
+    <Button
+        android:id="@+id/btn_delegation"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="多类型布局的Adapter"
+        />
+
+    <Button
+        android:id="@+id/btn_m3u8"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="M3U8 下载测试"
+        />
+
+    <Button
+        android:id="@+id/btn_sliderRecyView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="SliderRecyView"
+        />
+
+    <Button
+        android:id="@+id/btn_tinker"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="TINKER 热更测试"
+        />
+    <Button
+        android:id="@+id/btn_gsyplayer"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="GSYVideoPlayer 播放器"
+        />
+</LinearLayout>

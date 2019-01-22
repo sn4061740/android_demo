@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    >
+
+    <Button
+        android:id="@+id/btn_get_okgo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Okgo API GET网络请求"
+        />
+    <Button
+        android:id="@+id/btn_post_okgo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Okgo API POST网络请求"
+        />
+    <Button
+        android:id="@+id/btn_file_okgo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Okgo 文件网络请求"
+        />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/infoTxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="df"
+            android:padding="5dp"
+            />
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

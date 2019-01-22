@@ -1,0 +1,25 @@
+package android.com.m3u8down.m3u8;
+
+public interface IDownListener extends BaseListener {
+    void onStartDown();//开始下载
+    /**
+     * 下载m3u8文件.
+     * 注意：这个方法是异步的（子线程中执行），所以不能在此方法中回调，其他方法为主线程中回调
+     *
+     * @param itemFileSize 单个文件的大小
+     * @param totalTs      ts总数
+     * @param curTs        当前下载完成的ts个数
+     */
+    void onDownloading(long itemFileSize, int totalTs, int curTs);
+
+    /**
+     * 下载成功，全部下载完成
+     */
+    void onSuccess();
+    /**
+     * 当前已经下载的文件大小
+     *
+     * @param curLength
+     */
+    void onProgress(long curLength);
+}
