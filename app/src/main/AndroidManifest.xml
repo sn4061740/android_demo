@@ -17,8 +17,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".glide.GlideActivity" />
-        <activity android:name="android.com.commonadapter.test.MultiTypeActivity"></activity>
-        <activity android:name=".tinker.TinkerActivity"/>
+        <activity android:name="android.com.commonadapter.test.MultiTypeActivity" />
+        <activity android:name=".tinker.TinkerActivity" />
+        <activity android:name=".down.DownActivity"></activity>
     </application>
 
 </manifest>

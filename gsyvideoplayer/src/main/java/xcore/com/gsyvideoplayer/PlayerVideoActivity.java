@@ -1,23 +1,16 @@
 package xcore.com.gsyvideoplayer;
 
-import android.com.m3u8down.IPlayListener;
-import android.com.m3u8down.M3u8Utils;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
-import android.media.MediaPlayer;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
 
 import com.shuyu.gsyvideoplayer.GSYVideoManager;
-import com.shuyu.gsyvideoplayer.player.PlayerFactory;
 import com.shuyu.gsyvideoplayer.utils.OrientationUtils;
 import com.shuyu.gsyvideoplayer.video.StandardGSYVideoPlayer;
-
-import tv.danmaku.ijk.media.exo2.Exo2PlayerManager;
 
 public class PlayerVideoActivity extends AppCompatActivity {
 
@@ -34,13 +27,13 @@ public class PlayerVideoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_player_video);
 
-        M3u8Utils.getInstance().startServer();
-        M3u8Utils.getInstance().setPlayListener(new IPlayListener() {
-            @Override
-            public void onError(String model, String errMsg, int code) {
-                Log.e("TAG","ERR："+errMsg);
-            }
-        });
+//        M3u8Utils.getInstance().startServer();
+//        M3u8Utils.getInstance().setPlayListener(new IPlayListener() {
+//            @Override
+//            public void onError(String model, String errMsg, int code) {
+//                Log.e("TAG","ERR："+errMsg);
+//            }
+//        });
 
         videoPlayer = findViewById(R.id.gsyplayer);
         findViewById(R.id.btn_play).setOnClickListener(new View.OnClickListener() {

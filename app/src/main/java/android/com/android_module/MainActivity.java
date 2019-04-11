@@ -1,13 +1,13 @@
 package android.com.android_module;
 
 import android.Manifest;
+import android.com.android_module.down.DownActivity;
 import android.com.android_module.glide.GlideActivity;
 import android.com.android_module.tinker.TinkerActivity;
 import android.com.baselibrary.BaseLibraryActivity;
 import android.com.commonadapter.test.MultiTypeActivity;
 import android.com.lockpattern.widget.LockPatternActivity;
 import android.com.loopview.LoopViewActivity;
-import android.com.m3u8down.M3u8Activity;
 import android.com.network.net.NetActivity;
 import android.com.permission.IPermissionListener;
 import android.com.permission.RunActivity;
@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btn_sliderRecyView).setOnClickListener(onClickListener);
         findViewById(R.id.btn_tinker).setOnClickListener(onClickListener);
         findViewById(R.id.btn_gsyplayer).setOnClickListener(onClickListener);
+        findViewById(R.id.btn_down).setOnClickListener(onClickListener);
 
     }
     View.OnClickListener onClickListener=new View.OnClickListener() {
@@ -68,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
                     intent=new Intent(MainActivity.this,MultiTypeActivity.class);
                     break;
                 case R.id.btn_m3u8:
-                    intent=new Intent(MainActivity.this,M3u8Activity.class);
+                    //intent=new Intent(MainActivity.this,M3u8Activity.class);
                     break;
                 case R.id.btn_sliderRecyView:
                     intent=new Intent(MainActivity.this,SlideRecyclerViewActivity.class);
@@ -78,6 +79,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_gsyplayer:
                     PlayerVideoActivity.toActivity(MainActivity.this);
+                    break;
+                case R.id.btn_down:
+                    intent=new Intent(MainActivity.this,DownActivity.class);
                     break;
             }
             if(intent!=null){

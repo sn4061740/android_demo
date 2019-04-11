@@ -83,4 +83,11 @@
         android:layout_height="40dp"
         android:text="GSYVideoPlayer 播放器"
         />
+
+    <Button
+        android:id="@+id/btn_down"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="M3U8 下载"
+        />
 </LinearLayout>

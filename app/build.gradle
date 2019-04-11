@@ -37,9 +37,10 @@ dependencies {
     implementation project(path: ':baselibrary')
     implementation project(path: ':loopview')
     implementation project(path: ':commonAdapter')
-    implementation project(path:":m3u8Down")
-    implementation project(path:":sliderecyclerview")
+//    implementation project(path: ":m3u8Down")
+    implementation project(path: ":sliderecyclerview")
     implementation project(path: ":gsyvideoplayer")
+    implementation project(path: ":downmanager")
 
     implementation 'com.google.code.gson:gson:2.8.5'
 
